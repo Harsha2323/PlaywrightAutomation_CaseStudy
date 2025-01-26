@@ -5,7 +5,7 @@ const data =JSON.parse(JSON.stringify(require('../testdata/Testdata.json')))
 
 
 
-test.only('Verify that user is able to land on the profile page',async ({page})=>{
+test('Verify that user is able to land on the profile page',async ({page})=>{
 
     const pomanager =new PoManager(page)
     const loginpage = pomanager.getloginpage()
