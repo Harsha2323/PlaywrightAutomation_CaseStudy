@@ -17,7 +17,7 @@ test('Verify User is able to view the delete the added product', async ({page}) 
   await cartpage.verifyingitem()
   await page.screenshot({ path:'tests/Screenshot/'+Date.now()+'PoductsAddedInCart.png', fullPage: true})
   await cartpage.deletefromcart()
-  console.log("ownbranch")
+  console.log("ownbranch to study2")
 });
 
 test('Verify User is able to update the quality of the product and delete the product', async ({page}) => {
