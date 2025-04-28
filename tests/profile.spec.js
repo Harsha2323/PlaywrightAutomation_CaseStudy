@@ -25,7 +25,7 @@ test('Verify that user is able to update the profile name',async ({page})=>{
     await loginpage.logincred(data.username , data.password)
     const profilepage = pomanager.getprofilepage()
     await profilepage.profileicon()
-    await profilepage.updateprofile()
+    await profilepage.updateprofile(data.updatedname)
     await expect(page.locator('#name')).toHaveValue(data.updatedname)
     await page.screenshot({ path:'tests/Screenshot/'+Date.now()+'UpdatedProfilenName.png', fullPage: true})
 })
