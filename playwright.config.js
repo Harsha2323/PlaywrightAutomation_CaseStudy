@@ -1,6 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
-timeout: 60000, 
+ 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -13,6 +13,7 @@ timeout: 60000,
  * @see https://playwright.dev/docs/test-configuration
  */
 export default defineConfig({
+  timeout: 60000,
   testDir: './tests',
   /* Run tests in files in parallel */
   fullyParallel: true,
