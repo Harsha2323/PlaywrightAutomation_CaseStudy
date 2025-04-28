@@ -3,7 +3,6 @@ const {PoManager} = require('../PageObject/PoManager')
 const data =JSON.parse(JSON.stringify(require('../testdata/Testdata.json')))
 
 
-
 test('Verify User is able to navigate to the url', async ({page}) => {
   const pomanager =new PoManager(page)
   const loginpage = pomanager.getloginpage()
